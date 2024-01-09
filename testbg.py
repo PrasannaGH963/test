@@ -3,6 +3,14 @@ import streamlit as st
 # Set the background image using HTML and CSS
 background_image = "your_image_url.jpg"  # Replace with the URL or local path of your image
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
 # Define custom CSS with the background image
 # custom_css = f"""
 #     <style>
